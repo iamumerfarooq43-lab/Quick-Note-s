@@ -1,16 +1,66 @@
-# React + Vite
+Project Summary
+Project Name
+QuickNote - A simple and fast note-taking application.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Project Description
+QuickNote is a lightweight and straightforward single-page web application that allows users to quickly jot down notes. It provides a clean interface for adding and viewing notes, which are persistently stored in the browser's local storage.
 
-Currently, two official plugins are available:
+Problem It Solves
+In a world of complex and feature-heavy applications, QuickNote addresses the need for a minimalist and fast note-taking tool. It’s for users who need to capture their thoughts, ideas, or reminders without the distraction of unnecessary features.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Key Features
+Add Notes: Users can add a title and details for each note.
+View Notes: All notes are displayed in a clean, card-based layout.
+Delete Notes: Users can easily delete notes they no longer need.
+Local Storage: Notes are saved in the browser's local storage, so they persist between sessions.
+Responsive Design: The layout adapts to different screen sizes.
+Tech Stack
+JavaScript (ES6+)
+React 19
+Vite
+HTML5
+CSS3
+Tailwind CSS
+React-Specific Tools & Hooks
+useState: For managing component-level state (e.g., note title, details, and the list of tasks).
+useEffect: For side effects, specifically for saving tasks to the browser's local storage whenever the tasks state changes.
+Functional Components: The entire application is built using functional components.
+Third-Party Libraries & Tools
+react & react-dom: The core libraries for building the React application.
+lucide-react: For a lightweight and beautiful icon set, used here for the delete icon.
+vite: A next-generation frontend tooling that provides a faster and leaner development experience for modern web projects.
+tailwindcss: A utility-first CSS framework for rapidly building custom user interfaces.
+eslint: For static code analysis to find and fix problems in JavaScript code.
+Project Structure Overview
+The project follows a standard Vite + React structure:
 
-## React Compiler
+public/: Contains static assets that are publicly accessible.
+src/: The main source code of the application.
+assets/: Contains static assets like images and SVGs.
+App.css: Global styles for the application.
+App.jsx: The main application component that contains the core logic and UI.
+index.css: The main stylesheet, which also imports Tailwind CSS.
+main.jsx: The entry point of the React application.
+package.json: Lists all project dependencies and scripts.
+vite.config.js: Configuration file for Vite.
+eslint.config.js: Configuration file for ESLint.
+How to Run the Project
+Clone the repository:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+git clone <repository-url>
+Navigate to the project directory:
 
-## Expanding the ESLint configuration
+cd vite-project
+Install dependencies:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+npm install
+Run the development server:
+
+npm run dev
+The application will be available at http://localhost:5173.
+
+Build for production:
+
+npm run build
+Target Audience
+This project is for anyone who needs a simple, no-frills note-taking application. This includes students, developers, writers, and anyone who wants to quickly capture and organize their thoughts without the overhead of a more complex application.
